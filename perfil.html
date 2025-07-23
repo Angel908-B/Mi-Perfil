@@ -1,0 +1,81 @@
+<!-- Informa al navegador que versión de HTML se esta utilizando -->
+<!DOCTYPE html>
+
+<!-- Raiz de la página -->
+<html>
+  <!-- Metadatos de la página -->
+  <head>
+    <!-- Le da el nombre en la pestaña del navegador -->
+    <title>Perfil de Angel Barrios</title>
+
+    <!-- Etiqueta para enlazar el archivo css -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Etiqueta para que el diseño responsivo funcione -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <!-- Cuerpo de la página -->
+  <body>
+    <!-- Encabezado de la página -->
+    <header>
+      <h1>Mi Perfil</h1>
+    </header>
+
+    <!-- Contenido principal de la página -->
+    <main>
+      <!-- Sección "Sobre Mí" -->
+      <section>
+        <h2>Sobre Mí:</h2>
+        <p>Mi nombre es Angel Barrios, tengo 19 años y me gusta leer y ver sobre diversos temas como la informática, las ciencias y la tecnología. Además, también me gusta jugar videojuegos en vez en cuando.</p>
+      </section>
+
+      <!-- Sección de Experiencia -->
+      <section>
+        <h2>Experiencia:</h2>
+        <p>La experiencia educativa que he recibido durante mis estudios en el IUTA es programar con lenguajes como Python, Visual Basic, C# y Pascal, y realizar operaciones de consulta con SQL. También, estuve en un curso de inteligencia artificial, donde obtuve conocimientos de los conceptos básicos de los LLM, cómo funcionan y cómo utilizarlos correctamente. Además, llegué a realizar un programa de reconocimiento facial en grupo en la feria de ciencias y tecnología del IUTA. Durante la secundaria, llegué a participar en las olimpiadas de matemáticas a nivel municipal.</p>
+      </section>
+
+      <!-- Sección de Educación -->
+      <section>
+        <h2>Educación:</h2>
+        <p>La educación primaria y secundaria lo realicé en el C.E.N. "Bicentenario 5 de Julio de 1811" donde me gradué como bachiller y la educación universitaria actualmente lo estoy haciendo en el IUTA para obtener el título de T.S.U. en Informática.</p>
+      </section>
+
+      <!-- Sección del Formulario -->
+      <section>
+        <h2>Formulario:</h2>
+        <form id="formulario">
+          <!-- Campo del nombre -->
+          <div class="formularioElementos">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text", id="nombre", placeholder="Ingresa tu nombre aquí">
+          </div>
+
+          <!-- Campo del correo -->
+          <div class="formularioElementos">
+            <label for="correo">Correo Electrónico:</label><br>
+            <input type="text", id="correo", placeholder="tu@dominio.com">
+          </div>
+
+          <!-- Campo del mensaje -->
+          <div class="formularioElementos">
+            <label for="mensaje">Mensaje:</label><br>
+            <input type="text", id="mensaje", placeholder="Ingresa tu mensaje aquí">
+          </div>
+
+          <!-- Botón de envío -->
+          <button type="submit">Enviar</button>
+        </form>
+
+        <!-- Mensaje de confirmación del envío -->
+        <div id="mensajeConfirmacion">
+          Los datos fueron enviados exitosamente.
+        </div>
+
+        <!-- Enlaze del script de JavaScript para el funcionamiento del formulario -->
+        <script src="script.js"></script>
+      </section>
+    </main>
+  </body>
+</html>
